@@ -70,8 +70,7 @@ def get_repo_commits(org, repo, since)
       commit['author'] = inflated_result['commit']['author']['name']
       commit['date']   = inflated_result['commit']['author']['date']
       commit['files'] = files
-      commit['message'] = inflated_result['commit']['message'].gsub!("\n", " ")
-      
+      commit['message'] = inflated_result['commit']['message']
       @commits_data << commit
     end
   end

@@ -7,7 +7,7 @@
             <li>sha:     <%= commit['sha']    %></li>
             <li>author:  <%= commit['author']  %></li>
             <li>date:    <%= commit['date']    %></li>
-            <li>message: <%= commit['message'].slice(0..60) + '...' if commit['message'] && commit['message'].length > 40 %></li>
+            <li>message: <%= commit['message'] %></li>
             <li>files: </li>
             <%  commit['files'].each do |file| %>
             <ul>
