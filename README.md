@@ -11,11 +11,14 @@ password: 	    your_pass
 base_url:           https://api.github.com
 ```
 
-### requires:
+### requires
+
+```
 require 'sinatra'
 require 'shotgun'
 require 'github_inator' # source availabe from [github_inator repo](https://github.com/nmusaelian-rally/github_inator)
 require 'time'
+```
 
 ### run
 
