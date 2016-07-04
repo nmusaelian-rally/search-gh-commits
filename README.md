@@ -1,5 +1,9 @@
-Sinatra app that searches commits by user/organization and pushed_at date
+Sinatra app that searches commits 
 =========================
+
+### overview
+
+Sinatra app that searches commits by user/organization and pushed_at date
 
 ### configure
 
@@ -13,10 +17,12 @@ base_url:           https://api.github.com
 
 ### requires
 
+`github_inator` source is in [github_inator repo](https://github.com/nmusaelian-rally/github_inator)
+
 ```
 require 'sinatra'
 require 'shotgun'
-require 'github_inator' # source availabe from [github_inator repo](https://github.com/nmusaelian-rally/github_inator)
+require 'github_inator'
 require 'time'
 ```
 
