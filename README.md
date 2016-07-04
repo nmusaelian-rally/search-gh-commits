@@ -3,7 +3,8 @@ Sinatra app that searches commits
 
 ### overview
 
-Sinatra app that searches commits by user/organization and pushed_at date
+Sinatra app that searches commits by user/organization and pushed_at date.
+Search can also be limited to commits in a single repository since a specified date.
 
 ### configure
 
