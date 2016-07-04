@@ -1,0 +1,20 @@
+<h3>found <%= commits.length %> commits in <%= owner %> since <%= (Time.now - lookback.to_i * 3600).iso8601 %></h3>
+
+<ul> 
+  <% commits.each do |commit| %>
+    <li>repo: <%= commit['repo'] %></li>
+        <ul>
+            <li>sha:     <%= commit['sha']    %></li>
+            <li>author:  <%= commit['author']  %></li>
+            <li>date:    <%= commit['date']    %></li>
+            <li>message: <%= commit['message'].slice(0..60) + '...' if commit['message'] && commit['message'].length > 40 %></li>
+            <li>files: </li>
+            <%  commit['files'].each do |file| %>
+            <ul>
+              <li> <%= file %> </li>
+            </ul>
+            <% end %>
+        </ul>
+  <% end %>
+</ul>
+  
