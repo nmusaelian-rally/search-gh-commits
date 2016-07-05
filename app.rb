@@ -96,3 +96,7 @@ get '/results/:owner/:repository/:lookback' do
   commits_data = get_commits(params[:owner], params[:repository], params[:lookback])
   erb :results, :locals => {:commits => commits_data, :owner => params[:owner], :lookback => params[:lookback]}
 end
+
+not_found do
+  halt 404, 'page not found'
+end
